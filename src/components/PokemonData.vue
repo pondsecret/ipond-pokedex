@@ -128,7 +128,7 @@ export default {
     border:3px solid transparent;
 }
 .rate-btn:hover {
-    border:2px solid #000
+    border:2px solid rgba(0,0,0,0.5);
 }
 .inner-btn {
     display:flex;

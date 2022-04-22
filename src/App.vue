@@ -5,6 +5,9 @@
       <img style="width:80px" src="./assets/pokeball_icon.png"> 
       <h1 style="color:#000; margin-top:-10px">Pokemons Studio</h1>
     </header>
+    <div class="form-container">
+      <FormTemplate />
+    </div>
     <section class="pokemon-content-container">
       <h1>Pokemons List</h1>
       <PokemonList /> 
@@ -15,11 +18,12 @@
 <script>
 // import InsertPokemonForm from './components/InsertPokemonForm.vue'
 import PokemonList from './components/PokemonList.vue'
-
+import FormTemplate from './components/FormTemplate.vue'
 export default {
   name: 'App',
   components: {
     PokemonList,
+    FormTemplate
   },
  
 }
