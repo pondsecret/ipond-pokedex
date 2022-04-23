@@ -222,7 +222,7 @@
             </div>
             <div class="content-ctn">
                 <div class="button-ctn">
-                    <button class="button button--dione"><span>Save</span></button>
+                    <button class="button button--dione" @click.prevent="saveForm()"><span>Save</span></button>
                 </div>
             </div>
         </form>
@@ -260,6 +260,9 @@ export default {
         },
         removeAbilityElement(){
             return this.abilityElements.pop()
+        },
+        saveForm(){
+            this.$emit("onSaved",this.input)
         }
     },
 }

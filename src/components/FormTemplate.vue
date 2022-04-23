@@ -6,7 +6,7 @@
             </button>
         </div>
         <transition name="fade">
-            <InsertPokemonForm v-show="showForm"/>
+            <InsertPokemonForm v-show="showForm" @onSaved="passInput"/>
         </transition>
         
     </div>
@@ -27,6 +27,9 @@ export default {
     methods:{
         showFormToggle(){
             return this.showForm = !this.showForm
+        },
+        passInput(input){
+            this.$emit('onPassed',input)
         }
     },
 }
